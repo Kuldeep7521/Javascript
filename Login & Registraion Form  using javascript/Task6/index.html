@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/9bad7066d4.js" crossorigin="anonymous"></script>
+        <title>Registraion Form</title>
+    </head>
+
+    <body class="bg-cyan-100">
+
+
+
+        <form onsubmit=" return validate()">
+            <div class="">
+                <div class="grid grid-rows-1 items-center w-fit p-5 m-auto relative top-20  bg-white rounded-xl p-2">
+                    <div class="text-center">
+                        <i class="fa-solid fa-user fa-2xl"></i>
+                        <p class="text-2xl mt-4">User Registraion</p>
+                        <p class="text-sm">Please fill the form for Registraion. Make sure the information<br>
+                            you
+                            provided
+                            is correct.</p>
+                    </div>
+                    <div class=" text-black p-2">
+                        <label class="text-gray-500">Full Name</label>
+                        <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                            placeholder="Enter your full name" id="name" onblur="checkName()"><span id="name_error"
+                            class="text-xl text-red-700"> </span>
+                    </div>
+                    <div class="text-black p-2">
+                        <label class="text-gray-500">Email</label>
+
+                        <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                            placeholder="Enter your Email" id="email" onblur="checkEmail()"><span id="email_error"
+                            class="text-xl
+                                text-red-700"></span>
+
+                    </div>
+                    <div class="p-2">
+                        <label class="text-gray-500">Mobile Number</label><br>
+                        <div class="flex border border-gray-400 items-center rounded">
+                            <img class="w-7 inline m-1 " src="/27130.jpg"> +91
+                            <input class="  p-2  w-full rounded" type="text" placeholder="Enter your Mobile Number"
+                                onblur="checkMobile()" id="mobile" maxlength="10" minlength="10">
+                            <div>
+                                <span id="mobile_error" class="text-xl text-red-700"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid grid-rows-1  gap-2">
+                        <div class="p-2">
+                            <label class="text-gray-500">Password</label>
+
+                            <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                                placeholder="Enter the Password" id="Password" onblur="checkPass()"><span id="Password_error"
+                                class="text-xl
+                                    text-red-700"></span>
+                        </div>
+                        <!-- <div class="p-2">
+                            <label class="text-gray-500">Confirm Password</label>
+                            <div class="">
+                                <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                                    placeholder="Confirm your Password" id="confirm_Password" onsubmit="confirmPsssword()" /><span
+                                    id="confirmPassword_error" class="text-xl
+                                                    text-red-700"></span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <br>
+                
+
+
+                    <div class="grid grid-cols-2 justify-center items-center gap-2">
+                        <button class="p-2 border border-gray-400 w-full rounded text-white bg-black"
+                            type="submit"> Register
+                            Now</button>
+                        <button class="p-2 border border-gray-400 w-full rounded text-white bg-black"
+                            type=""><a href= "/Login.html">Already a User</a></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        </div>
+        </div>
+        <br>
+        <br>
+
+        <script src="/main.js"></script>
+    </body>
+
+    </html>
+</body>
+
+</html>

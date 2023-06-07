@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9bad7066d4.js" crossorigin="anonymous"></script>
+    <title>User Login</title>
+</head>
+
+<body class="bg-cyan-100">
+    <form onsubmit="return validate()">
+        <div class="grid grid-rows-1 w-fit m-auto  p-2 relative top-48 justify-center items-center bg-white rounded-xl">
+            <div class="text-center p-2">
+                <i class="fa-solid fa-user fa-2xl"></i>
+                <p class="text-2xl p-2">User Login</p>
+            </div>
+            <div class="text-black p-2">
+                <label class="text-gray-500">Email</label>
+
+                <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                    placeholder="Enter your Email" id="email" onblur="checkEmail()"><span id="email_error" class="
+                    text-red-700"></span>
+
+            </div>
+            <div class="p-2">
+                <label class="text-gray-500">Password</label>
+
+                <input class=" border border-gray-400 text-black p-2 w-full rounded" type="text"
+                    placeholder="Enter the Password" id="Password" onblur="checkPass()"><span id="Password_error" class="
+                    text-red-700"></span>
+            </div>
+            <div class="p-2">
+                <button id="submit" class="p-2 border border-gray-400 w-full rounded text-white bg-black" type="submit">Log IN</button>
+            </div>
+        </div>
+    </form>
+    <div class="relative bottom-48">
+    <h1 id ="heading" class="text-center text-2xl"></h1>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
